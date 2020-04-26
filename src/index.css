@@ -79,4 +79,8 @@ svg {
   position: absolute;
 }
 
+.card-img-top {
+  background-image: url('/img/play-64.png')
+}
+
 /*MATERIAL DESIGN THEMES ARE GREATTTT*/

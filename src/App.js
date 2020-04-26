@@ -32,7 +32,7 @@ function App() {
        <SearchbarContainer/>
       </Navbar>
       <CardHolderContainer></CardHolderContainer>
-      <Player></Player>
+      <Player playing={false}></Player>
     </>
   );
 }

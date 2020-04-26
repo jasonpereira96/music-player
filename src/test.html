@@ -3,15 +3,21 @@
 <head></head>
 
 <body>
-    <audio id='audio' controls src='../songs/Dragonfly.mp3'></audio>
+    <audio id='audio' controls src='../media/songs/Dragonfly.mp3'></audio>
 
-    <button id='change'>Change</button>
+    <button id='change1'>Change</button>
+
+    <img src='img/jc.jpg' id='img' width="400" height="400">
     <script>
-        let button = document.getElementById('change');
+        let button = document.getElementById('change1');
         button.addEventListener('click', function () {
             let audio = document.getElementById('audio');
-            audio.src = '../songs/Bright.mp3'
-            audio.play();
+            // audio.src = '../songs/Bright.mp3'
+            audio.play();   
+        });
+        let image = document.getElementById('img');
+        image.addEventListener('hover', function() {
+            image.src = 'img/play-64.png';
         });
     </script>
 </body>

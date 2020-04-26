@@ -1,8 +1,11 @@
 //export the root reducer
 import { combineReducers } from 'redux'
-import {FILTER} from './../actions/actions'
-import songList from '../data/songs'
+// import songList from '../data/songs'
 // import todos from './todos'
+import songs from './SongsReducer'
+import player from './PlayerReducer'
+import searchbar from './SearchbarReducer'
+
 let exampleStateTree = {
     songs: [{
         title: 'Moon River',
@@ -22,6 +25,7 @@ let exampleStateTree = {
     },
     player: {
         playing: false,
+        songId: 123,
         songName: '',
         songArtist: '',
         timeElasped: 0, //in secs
@@ -29,24 +33,6 @@ let exampleStateTree = {
         percentComplete: 0
     }
 };
-const songs = (songs = [], action) => { //songReducer
-    switch (action.type) {
-        case FILTER: 
-            let {filterString} = action;
-            filterString = filterString.toLowerCase().trim();
-            return songList.filter(function(song) {
-                return song.title.toLowerCase().includes(filterString) || song.subtitle.toLowerCase().includes(filterString);
-            });
-        default:
-            return songList;
-    } 
-}
-const searchbar = (searchbar = '', action) => {
-    return searchbar
-}
-const player = (player = {}, action) => {
-    return player
-}
 
 export default combineReducers({
     songs, searchbar, player
