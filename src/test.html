@@ -1,0 +1,19 @@
+<html>
+
+<head></head>
+
+<body>
+    <audio id='audio' controls src='../songs/Dragonfly.mp3'></audio>
+
+    <button id='change'>Change</button>
+    <script>
+        let button = document.getElementById('change');
+        button.addEventListener('click', function () {
+            let audio = document.getElementById('audio');
+            audio.src = '../songs/Bright.mp3'
+            audio.play();
+        });
+    </script>
+</body>
+
+</html>
