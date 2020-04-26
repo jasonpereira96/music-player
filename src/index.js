@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from './reducers/index'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import songList from './data/songs'
 
+
+let initialState = {
+  songs: songList
+}
+const store = createStore(rootReducer, initialState);
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

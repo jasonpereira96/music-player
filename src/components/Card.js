@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card'
 import jc from './../img/jc.jpg';
 
 
-function Card(props) {
+function SongCard(props) {
     return (<Card style={{ width: '18rem'}}>
         <Card.Img variant="top" src={jc} />
         <Card.Body>
@@ -16,4 +16,4 @@ function Card(props) {
     </Card>);
 }
 
-export default Card;
+export default SongCard;

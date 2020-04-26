@@ -1,10 +1,10 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container'
-import Card from './Card'
+import Card from 'react-bootstrap/Card'
 
 
 function EmptyCard(props) {
-    return (<Card className='empty-card' style={{ width: '18rem' }} border='light'>
+    return (<Card className='empty-card' style={{ width: '18rem' }} border='none'>
         <Card.Body>
             <Card.Title></Card.Title>
             <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle>

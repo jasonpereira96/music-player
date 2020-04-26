@@ -10,7 +10,7 @@ import Button from 'react-bootstrap/Button'
 import Nav from 'react-bootstrap/Nav'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import play from './../img/play.png';
+import play from './../img/play-64.png';
 import forward from './../img/fast-forward-64.png';
 import rewind from './../img/rewind-64.png';
 import pause from './../img/pause.png';
@@ -20,7 +20,7 @@ import pause from './../img/pause.png';
 
 
 
-function Player() {
+function Player(props) {
     return ( //PROBABLY USING A NAVBAR HERE WOULD BE BETTER
         <Nav bsPrefix='player' className='flex-row'>
             <Nav.Item><div><h5>Song Name</h5><h6>Artist</h6></div></Nav.Item>
@@ -39,6 +39,7 @@ function Player() {
                 </div>
             </Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link><span className='time'>00:00/05:00</span></Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link><audio src='../../media/songs/Dragonfly.mp3'></audio></Nav.Link></Nav.Item>
         </Nav>
     );
 }

@@ -8,11 +8,17 @@ import CardHolder from './components/CardHolder';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Player from './components/Player'
+import CardHolderContainer from './containers/CardHolderContainer'
+import SearchbarContainer from './containers/SearchbarContainer'
 // import Container from 'react-bootstrap/Container'
 
 
 
 function App() {
+  let songs = new Array(14).fill({
+    title: 'Moon River',
+    subtitle: 'In My Room'
+  })
   return (
     <>
       <Navbar bg="dark">
@@ -23,17 +29,10 @@ function App() {
             <Nav.Link className='white' href="#pricing">Pricing</Nav.Link>
           </Nav>
         </Navbar.Brand> */}
-        <Form inline>
-          <Form.Control type="text" placeholder="Search" className=" mr-sm-2" />
-          <Button type="submit">Search</Button>
-        </Form>
+       <SearchbarContainer/>
       </Navbar>
-      <CardHolder></CardHolder>
-      
-      <h1>Hi</h1>
-
+      <CardHolderContainer></CardHolderContainer>
       <Player></Player>
-
     </>
   );
 }
