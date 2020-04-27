@@ -1,13 +1,49 @@
 <html>
 
 <head></head>
-
+<style>
+    .container {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+    }
+    .red {
+        background-color: red;
+        flex: 1;
+    }
+    .blue {
+        background-color: blue;
+        flex: 2;
+    }
+    .green {
+        flex: 1;
+        background-color: green;
+    }
+    .yellow {
+        flex: 2;
+        background-color: yellow;
+    }
+    .orange {
+        flex: 5;
+        background-color: orange;
+    }
+</style>
 <body>
-    <audio id='audio' controls src='../media/songs/Dragonfly.mp3'></audio>
 
-    <button id='change1'>Change</button>
+    <!-- <audio id='audio' controls src='../media/songs/Dragonfly.mp3'></audio> -->
 
-    <img src='img/jc.jpg' id='img' width="400" height="400">
+    <!-- <button id='change1'>Change</button> -->
+
+    <!-- <img src='img/jc.jpg' id='img' width="400" height="400"> -->
+    <div class='container'>
+        <div class='red'>g</div>
+        <div class='blue'></div>
+        <div class='green'></div>
+        <div class='yellow'></div>
+        <div class='orange'></div>
+
+    </div>
+    
     <script>
         let button = document.getElementById('change1');
         button.addEventListener('click', function () {

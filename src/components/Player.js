@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { play, pause, timeUpdate, next, prev } from './../actions/actions'
 // import Button from 'react-bootstrap/Button'
-import Nav from 'react-bootstrap/Nav'
+import div from 'react-bootstrap/Nav'
 import playImage from './../img/play-64.png';
 import forward from './../img/fast-forward-64.png';
 import rewind from './../img/rewind-64.png';
@@ -24,42 +24,44 @@ class Player extends React.Component {
         e.persist();
         console.log(e);
         let audio = e.target;
-        let {currentTime, duration} = audio;        
+        let { currentTime, duration } = audio;
         this.props.onTimeUpdate(currentTime, duration);
+    }
+    componentDidMount() {
+        let gutter = document.getElementById('gutter');
+        this.gutterWidth = gutter.clientWidth;
+        this.x = gutter.getBoundingClientRect().x;
     }
 
     render() {
         let convert = this.convert;
-        let {currentTime, duration, source} = this.props;                
+        let { currentTime, duration, source } = this.props;
         currentTime = convert(currentTime);
         duration = convert(duration);
         return ( //PROBABLY USING A NAVBAR HERE WOULD BE BETTER
-            <Nav bsPrefix='player' className='flex-row'>
-                <Nav.Item><div><h5>{this.props.songName}</h5><h6>{this.props.artist}</h6></div></Nav.Item>
-                <Nav.Item><Nav.Link></Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link></Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link></Nav.Link></Nav.Item>
+            <div className='player'>
+                <div className='info'><h5>{this.props.songName}</h5><h6>{this.props.artist}</h6></div>
 
-                <Nav.Item><Nav.Link> <img src={rewind} className='prev' onClick={this.props.onPrev}/> </Nav.Link></Nav.Item>
+                <div className='prev'><img src={rewind} className='previmg' onClick={this.props.onPrev} /> </div>
                 {this.props.playing ?
-                    <Nav.Item><Nav.Link><img src={pauseImage} className='pause' onClick={this.props.onPause} /> </Nav.Link></Nav.Item> :
-                    <Nav.Item><Nav.Link><img src={playImage} className='play' onClick={this.props.onPlay} /> </Nav.Link></Nav.Item>}
+                    <div className='pause'><img src={pauseImage} className='pauseimg' onClick={this.props.onPause} /> </div> :
+                    <div className='play'><img src={playImage} className='playimg' onClick={this.props.onPlay} /> </div>}
 
                 {/* <Nav.Item><Nav.Link>{this.props.playing ? (<img src={pause} className='play' />) : (<img src={play} className='play' />)} </Nav.Link></Nav.Item> */}
-                <Nav.Item><Nav.Link><img src={forward} className='next' onClick={this.props.onNext}/> </Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link>
-                    <div className='gutter'>
-                        <span className='done'></span>
-                        <span className='ball' id='ball'style={{left: this.getLeft()}}></span>
-                        <span className='left' id='left'></span>
-                    </div>
-                </Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link><span className='time'>{currentTime}/{duration}</span></Nav.Link></Nav.Item>
-                <Nav.Item><Nav.Link>
+                <div className='next'><img src={forward} className='nextimg' onClick={this.props.onNext} /> </div>
+                <div className='gutter' id='gutter'>
+                    {/* <span className='done'></span> */}
+                    <div className='waste'></div>
+                    <div className='ball' id='ball' style={{ left: this.getLeft() }}></div>
+                    <div className='left' id='left'></div>
+                    <div className='waste'></div>
+                </div>
+                <div className='time'>{currentTime}/{duration}</div>
+                <div className='audio'>
                     <audio id='audio' src={source} onTimeUpdate={this.onPlay}>
                     </audio>
-                </Nav.Link></Nav.Item>
-            </Nav>
+                </div>
+            </div>
         );
     }
     convert(num) { //this function has to be fixed
@@ -70,8 +72,8 @@ class Player extends React.Component {
         return `${hours}:${minutes}`;
     }
     getLeft() {
-        let {currentTime, duration} = this.props;
-        return (currentTime / duration) * 300;
+        let { currentTime, duration } = this.props;
+        return (currentTime / duration) * (this.gutterWidth) + this.x;
     }
 }
 
@@ -82,7 +84,7 @@ const mapStatetoProps = state => { //gets the full state
         currentTime: state.player.currentTime,
         songName: state.player.songName,
         artist: state.player.artist,
-        source:  state.player.source
+        source: state.player.source
     };
 }
 const mapDispatchToProps = dispatch => {
@@ -93,13 +95,13 @@ const mapDispatchToProps = dispatch => {
         onPause: function () {
             dispatch(pause())
         },
-        onNext:  function () {
+        onNext: function () {
             dispatch(next())
         },
-        onPrev: function() {
+        onPrev: function () {
             dispatch(prev())
         },
-        onTimeUpdate: function(currentTime, duration) {
+        onTimeUpdate: function (currentTime, duration) {
             dispatch(timeUpdate(currentTime, duration))
         }
     }
