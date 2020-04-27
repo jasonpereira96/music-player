@@ -65,7 +65,9 @@ class Player extends React.Component {
     convert(num) { //this function has to be fixed
         var hours = Math.floor(num / 60);
         var minutes = num % 60;
-        return hours + ":" + minutes;
+        hours = hours < 10 ? `0${hours}` : hours;
+        minutes = minutes < 10 ? `0${minutes}` : minutes;
+        return `${hours}:${minutes}`;
     }
     getLeft() {
         let {currentTime, duration} = this.props;

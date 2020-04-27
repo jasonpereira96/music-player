@@ -41,7 +41,6 @@ const player = (player = initalState, action) => {
             source: nextSong.src,
             artist: nextSong.artist,
             songId: nextSong.id,
-            // playing: true
         };
     } else if (action.type === PREV) {
         let currentSongId = player.songId;
@@ -54,13 +53,12 @@ const player = (player = initalState, action) => {
             source: prevSong.src,
             artist: prevSong.artist,
             songId: prevSong.id,
-            // playing: true
         };
     } else if (action.type === TIMEUPDATE) {
         let { currentTime, duration } = action;
         currentTime = Math.floor(currentTime);
         duration = Math.floor(duration);
-
+        duration = isNaN(duration) ? 0 : duration;
         return {
             ...player,
             currentTime: currentTime,
