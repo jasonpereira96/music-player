@@ -50,7 +50,7 @@ function handleChange() {
 				console.log(r)
 			}).catch(e => {
 				console.log(e)
-			})
+			});
 		} else {
 			audio.pause();
 		}

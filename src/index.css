@@ -71,9 +71,9 @@ svg {
   position: absolute;
 }
 /* https://www.iconsdb.com/white-icons/fast-forward-icon.html */
-.play {
+.play, .next, .prev, .pause {
   width: 30px;
-  height: 30px;
+  height: 30px; 
 }
 
 .gutter {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { play, pause, PLAY, PAUSE, timeUpdate } from './../actions/actions'
+import { play, pause, timeUpdate, next, prev } from './../actions/actions'
 // import Button from 'react-bootstrap/Button'
 import Nav from 'react-bootstrap/Nav'
 import playImage from './../img/play-64.png';
@@ -40,13 +40,13 @@ class Player extends React.Component {
                 <Nav.Item><Nav.Link></Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link></Nav.Link></Nav.Item>
 
-                <Nav.Item><Nav.Link> <img src={rewind} className='play' /> </Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link> <img src={rewind} className='prev' onClick={this.props.onPrev}/> </Nav.Link></Nav.Item>
                 {this.props.playing ?
-                    <Nav.Item><Nav.Link><img src={pauseImage} className='play' onClick={this.props.onPause} /> </Nav.Link></Nav.Item> :
+                    <Nav.Item><Nav.Link><img src={pauseImage} className='pause' onClick={this.props.onPause} /> </Nav.Link></Nav.Item> :
                     <Nav.Item><Nav.Link><img src={playImage} className='play' onClick={this.props.onPlay} /> </Nav.Link></Nav.Item>}
 
                 {/* <Nav.Item><Nav.Link>{this.props.playing ? (<img src={pause} className='play' />) : (<img src={play} className='play' />)} </Nav.Link></Nav.Item> */}
-                <Nav.Item><Nav.Link><img src={forward} className='play' /> </Nav.Link></Nav.Item>
+                <Nav.Item><Nav.Link><img src={forward} className='next' onClick={this.props.onNext}/> </Nav.Link></Nav.Item>
                 <Nav.Item><Nav.Link>
                     <div className='gutter'>
                         <span className='done'></span>
@@ -90,6 +90,12 @@ const mapDispatchToProps = dispatch => {
         },
         onPause: function () {
             dispatch(pause())
+        },
+        onNext:  function () {
+            dispatch(next())
+        },
+        onPrev: function() {
+            dispatch(prev())
         },
         onTimeUpdate: function(currentTime, duration) {
             dispatch(timeUpdate(currentTime, duration))

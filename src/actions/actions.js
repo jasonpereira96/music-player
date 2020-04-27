@@ -18,13 +18,23 @@ export const play = songId => {
     return {
         type: PLAY,
         songId: songId //will be undefined in case of the same song -> Play/Pause
-    }
+    };
 }
 
 export const pause = () => {
     return {
         type: PAUSE
-    }
+    };
+}
+export const next = () => {
+    return {
+        type: NEXT
+    };
+}
+export const prev = () => {
+    return {
+        type: PREV
+    };
 }
 export const timeUpdate = (currentTime, duration) => {
     return {
