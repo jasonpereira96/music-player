@@ -17,7 +17,51 @@ code {
 }
 body {
   /* background-color: #121212; */
-  background-color: #0c1318 /*this looks nice*/
+  background-color: #0c1318 ; /*this looks nice*/
+  /* background-color: rgb(12, 19, 24) */
+
+}
+nav.navbar {
+  background-color: rgba(12, 19, 24, 0.95) !important;
+  /* background-color: #0c1318 !important; this looks nice */
+
+}
+h5, h6, div.card-title.h5{
+  color: #BB86FC !important;
+}
+div.card-subtitle.h6 {
+  /* color: #03dac6 !important; */
+  color: #BB86FC !important;
+  /* color: #3700b3 !important; */
+
+}
+.song-card {
+  box-shadow:  3px 3px 5px 1px black;
+}
+div.card-body {
+  background-color: rgba(12, 19, 24, 0.95);
+}
+#search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BB86FC;
+  opacity: 1; /* Firefox */
+}
+
+.bg-dark, body, #search {
+  background-color: #0c1318 ; /*this looks nice*/
+}
+.card {
+  border: none;
+}
+#search {
+  color: #BB86FC;
+  border: 4px solid #BB86FC;
+  border-radius: 5px;  
+  box-shadow: #BB86FC;
+  border-radius: 20px;
+}
+.extra-space {
+  width: 100%;
+  min-height: 60px;
 }
 
 .player-fluid {
@@ -31,7 +75,7 @@ body {
 .player {
   display: inline-flex;
   background-color: #0c1318;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   height: 70px;
   padding: 10px;
@@ -52,7 +96,7 @@ svg {
 
 
 .timespan {
-  color: #007bff;
+  color: #BB86FC;
   width: inherit;
   /* top: 30%; */
   /* right: 450px; */
@@ -96,7 +140,7 @@ svg {
   flex: 25;
 }
 .done , .left {
-  background-color: #007bff;
+  background-color: #BB86FC;
   /* height: 5px; */
   /* width: 300px; */
   width: 100%;
@@ -117,7 +161,7 @@ svg {
   position: absolute;
   top: 27px;
   /* position: absolute; */
-  background-color: #007bff;
+  background-color: #BB86FC;
 }
 .time {
   flex:2;
@@ -127,6 +171,7 @@ svg {
   /* display: table-cell; */
   text-align: center;
   vertical-align: middle;
+  color: #BB86FC;
   
 }
 .timespan { 

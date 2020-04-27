@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button'
 import Player from './components/Player'
 import CardHolderContainer from './containers/CardHolderContainer'
 import SearchbarContainer from './containers/SearchbarContainer'
+import ExtraSpace from './components/ExtraSpace'
 // import Container from 'react-bootstrap/Container'
 
 
@@ -32,6 +33,7 @@ function App() {
        <SearchbarContainer/>
       </Navbar>
       <CardHolderContainer></CardHolderContainer>
+      <ExtraSpace></ExtraSpace>
       <Player playing={false}></Player>
     </>
   );

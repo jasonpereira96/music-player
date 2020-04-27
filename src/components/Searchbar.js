@@ -9,8 +9,8 @@ function Searchbar(props) {
   return (
     <>
       <Form inline>
-        <Form.Control type="text" placeholder="Search" className=" mr-sm-2" onChange={props.onChange}/>
-        <Button type="submit">Search</Button>
+        <Form.Control type="text" placeholder="Search"  onChange={props.onChange} id='search'/>
+        {/* <Button type="submit">Search</Button> */}
       </Form>
     </>
   );

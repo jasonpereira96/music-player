@@ -5,7 +5,7 @@ import { play } from './../actions/actions'
 import { connect } from 'react-redux'
 
 function SongCard(props) {
-    return (<Card style={{ width: '18rem' }} >
+    return (<Card style={{ width: '18rem' }} className='song-card'>
         <Card.Img variant="top" src={jc} onClick={function () { props.onClick(props.songId) }} />
         <Card.Body>
             <Card.Title>{props.title}</Card.Title>
