@@ -7,10 +7,10 @@ const songs = (songs = [], action) => { //songReducer
             let { filterString } = action;
             filterString = filterString.toLowerCase().trim();
             return songList.filter(function (song) {
-                return song.title.toLowerCase().includes(filterString) || song.subtitle.toLowerCase().includes(filterString);
+                return song.title.toLowerCase().includes(filterString) || song.artist.toLowerCase().includes(filterString);
             });
         default:
-            return songList;
+            return songs;
     }
 }
 

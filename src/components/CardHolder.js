@@ -16,11 +16,11 @@ function CardHolder(props) {
     while (number >= 5) {
         cardDecks = cardDecks.concat(
             <CardDeck style={{ padding: 20 }}>
-                <SongCard subtitle={songs[count + 0].subtitle} title={songs[count + 0].title} />
-                <SongCard subtitle={songs[count + 1].subtitle} title={songs[count + 1].title} />
-                <SongCard subtitle={songs[count + 2].subtitle} title={songs[count + 2].title} />
-                <SongCard subtitle={songs[count + 3].subtitle} title={songs[count + 3].title} />
-                <SongCard subtitle={songs[count + 4].subtitle} title={songs[count + 4].title} />
+                <SongCard artist={songs[count + 0].artist} title={songs[count + 0].title} songId={songs[count + 0].id}/>
+                <SongCard artist={songs[count + 1].artist} title={songs[count + 1].title} songId={songs[count + 1].id}/>
+                <SongCard artist={songs[count + 2].artist} title={songs[count + 2].title} songId={songs[count + 2].id}/>
+                <SongCard artist={songs[count + 3].artist} title={songs[count + 3].title} songId={songs[count + 3].id}/>
+                <SongCard artist={songs[count + 4].artist} title={songs[count + 4].title} songId={songs[count + 4].id}/>
             </CardDeck>);
         number = number - 5;
         count = count + 5;
@@ -28,7 +28,7 @@ function CardHolder(props) {
     let numberOfEmptyCards = 5 - number % 5;
     let remainingCards = [];
     for (var i = count; i < songs.length; i++) {
-        remainingCards.push(<SongCard title={songs[i].title} subtitle={songs[i].subtitle} />)
+        remainingCards.push(<SongCard title={songs[i].title} artist={songs[i].artist} songId={songs[i].id}/>)
     }
     for (var i = 1; i <= numberOfEmptyCards; i++) {
         remainingCards.push(<EmptyCard />);

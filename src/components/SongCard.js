@@ -1,14 +1,15 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card'
 import jc from './../img/jc.jpg';
-
+import { play } from './../actions/actions'
+import { connect } from 'react-redux'
 
 function SongCard(props) {
-    return (<Card style={{ width: '18rem'}} >
-        <Card.Img variant="top" src={jc}/>
+    return (<Card style={{ width: '18rem' }} >
+        <Card.Img variant="top" src={jc} onClick={function () { props.onClick(props.songId) }} />
         <Card.Body>
             <Card.Title>{props.title}</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">{props.subtitle}</Card.Subtitle>
+            <Card.Subtitle className="mb-2 text-muted">{props.artist}</Card.Subtitle>
             {/* <Card.Text>
                 Some quick example text to build on the card title and make up the bulk of
                 the card's content.</Card.Text> */}
@@ -21,7 +22,9 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => {
-    
+    return {
+        onClick: songId => dispatch(play(songId))
+    }
 }
 
-export default SongCard;
+export default connect(null, mapDispatchToProps)(SongCard);

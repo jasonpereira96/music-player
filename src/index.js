@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import rootReducer from './reducers/index'
@@ -8,11 +7,23 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import songList from './data/songs'
 
-
+let firstSong = songList[0];
 let initialState = {
-	songs: songList
+	songs: songList,
+	searchbar: {
+        filter: ''
+    },
+    player: {
+        playing: false,
+        songId: firstSong.id,
+        songName: firstSong.title,
+		artist: firstSong.artist,
+		source: firstSong.src,
+        currentTime: 0, //in secs
+        duration: 0,//in secs
+    }
 }
-const store = createStore(rootReducer, initialState);
+const store = createStore(rootReducer, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 store.subscribe(handleChange);
 ReactDOM.render(
 	<React.StrictMode>

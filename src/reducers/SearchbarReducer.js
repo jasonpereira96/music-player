@@ -1,6 +1,7 @@
 
 const searchbar = (searchbar = '', action) => {
-    return searchbar
+
+    return action.filterString ? action.filterString : '';
 }
 
 export default searchbar;

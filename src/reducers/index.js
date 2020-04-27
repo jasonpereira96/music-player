@@ -28,7 +28,7 @@ let exampleStateTree = {
         songId: 123,
         songName: '',
         songArtist: '',
-        timeElasped: 0, //in secs
+        currentTime: 0, //in secs
         duration: 0,//in secs
         percentComplete: 0
     }
