@@ -1,5 +1,6 @@
 import { PLAY, PAUSE, TIMEUPDATE, PREV, NEXT, VOLUMECHANGE } from './../actions/actions'
 import songList from './../data/songs'
+
 let initalState = {
     playing: false,
     songId: 123,
@@ -10,6 +11,7 @@ let initalState = {
     source: '',
     volume: 1
 };
+
 const player = (player = initalState, action) => {
     if (action.type === PLAY) {
         if (action.songId) {

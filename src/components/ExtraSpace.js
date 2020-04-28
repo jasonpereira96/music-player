@@ -4,5 +4,4 @@ const ExtraSpace = () => {
     return (<div className='extra-space'></div>);
 }
 
-
 export default ExtraSpace;

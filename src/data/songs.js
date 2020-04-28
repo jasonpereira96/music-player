@@ -7,7 +7,6 @@ import Lazy_Boy_Blues from './../media/songs/Lazy_Boy_Blues.mp3'
 import Sunshine_on_Sand from './../media/songs/Sunshine_on_Sand.mp3'
 import Whirlpool from './../media/songs/Whirlpool.mp3'
 //import all the images
-import jc from './../img/jc.jpg'
 import Bright_IMG from './../img/Bright.jpg'
 import Attraction_IMG from './../img/Attraction.jpg'
 import Castlevania_IMG from './../img/Castlevania.jpg'
