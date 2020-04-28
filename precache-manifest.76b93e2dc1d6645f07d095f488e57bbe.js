@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55a6927f07791ca6833b7f714e6b9361",
+    "revision": "fe9d259ecf371b3f9e46a55a202bd623",
     "url": "/music-player/index.html"
   },
   {
-    "revision": "2b1667b0bc4bac6696a7",
+    "revision": "4d268921770aea6bc97b",
     "url": "/music-player/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "12640042460e36034602",
+    "revision": "8521d8489ae5d2c2f4ad",
     "url": "/music-player/static/css/main.8068ed2c.chunk.css"
   },
   {
-    "revision": "2b1667b0bc4bac6696a7",
-    "url": "/music-player/static/js/2.07fa950b.chunk.js"
+    "revision": "4d268921770aea6bc97b",
+    "url": "/music-player/static/js/2.47e06a07.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/music-player/static/js/2.07fa950b.chunk.js.LICENSE.txt"
+    "url": "/music-player/static/js/2.47e06a07.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "12640042460e36034602",
-    "url": "/music-player/static/js/main.4117ef1b.chunk.js"
+    "revision": "8521d8489ae5d2c2f4ad",
+    "url": "/music-player/static/js/main.c9a20bdb.chunk.js"
   },
   {
     "revision": "66bc9069cc569b161e81",
@@ -86,9 +86,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3072d272ad96678751931072c4319fef",
     "url": "/music-player/static/media/Whirlpool.3072d272.jpg"
-  },
-  {
-    "revision": "4cc10c1b5278bbc0817fe9dd4b8ca26d",
-    "url": "/music-player/static/media/jc.4cc10c1b.jpg"
   }
 ]);

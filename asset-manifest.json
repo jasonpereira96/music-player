@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/music-player/static/css/main.8068ed2c.chunk.css",
-    "main.js": "/music-player/static/js/main.4117ef1b.chunk.js",
-    "main.js.map": "/music-player/static/js/main.4117ef1b.chunk.js.map",
+    "main.js": "/music-player/static/js/main.c9a20bdb.chunk.js",
+    "main.js.map": "/music-player/static/js/main.c9a20bdb.chunk.js.map",
     "runtime-main.js": "/music-player/static/js/runtime-main.bdb22342.js",
     "runtime-main.js.map": "/music-player/static/js/runtime-main.bdb22342.js.map",
     "static/css/2.69121389.chunk.css": "/music-player/static/css/2.69121389.chunk.css",
-    "static/js/2.07fa950b.chunk.js": "/music-player/static/js/2.07fa950b.chunk.js",
-    "static/js/2.07fa950b.chunk.js.map": "/music-player/static/js/2.07fa950b.chunk.js.map",
+    "static/js/2.47e06a07.chunk.js": "/music-player/static/js/2.47e06a07.chunk.js",
+    "static/js/2.47e06a07.chunk.js.map": "/music-player/static/js/2.47e06a07.chunk.js.map",
     "index.html": "/music-player/index.html",
-    "precache-manifest.86afc5c039f25fac3535a176211cc18d.js": "/music-player/precache-manifest.86afc5c039f25fac3535a176211cc18d.js",
+    "precache-manifest.76b93e2dc1d6645f07d095f488e57bbe.js": "/music-player/precache-manifest.76b93e2dc1d6645f07d095f488e57bbe.js",
     "service-worker.js": "/music-player/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/music-player/static/css/2.69121389.chunk.css.map",
     "static/css/main.8068ed2c.chunk.css.map": "/music-player/static/css/main.8068ed2c.chunk.css.map",
-    "static/js/2.07fa950b.chunk.js.LICENSE.txt": "/music-player/static/js/2.07fa950b.chunk.js.LICENSE.txt",
+    "static/js/2.47e06a07.chunk.js.LICENSE.txt": "/music-player/static/js/2.47e06a07.chunk.js.LICENSE.txt",
     "static/media/Attraction.jpg": "/music-player/static/media/Attraction.a74504ad.jpg",
     "static/media/Attraction.mp3": "/music-player/static/media/Attraction.c3f8f731.mp3",
     "static/media/Bright.mp3": "/music-player/static/media/Bright.8cbda0a3.mp3",
@@ -28,14 +28,13 @@
     "static/media/Lazy_Boy_Blues.mp3": "/music-player/static/media/Lazy_Boy_Blues.b74d8df9.mp3",
     "static/media/Sunshine_on_Sand.mp3": "/music-player/static/media/Sunshine_on_Sand.af0f9b92.mp3",
     "static/media/Whirlpool.mp3": "/music-player/static/media/Whirlpool.1298b276.mp3",
-    "static/media/Whirlpool.jpg": "/music-player/static/media/Whirlpool.3072d272.jpg",
-    "static/media/jc.jpg": "/music-player/static/media/jc.4cc10c1b.jpg"
+    "static/media/Whirlpool.jpg": "/music-player/static/media/Whirlpool.3072d272.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.bdb22342.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.07fa950b.chunk.js",
+    "static/js/2.47e06a07.chunk.js",
     "static/css/main.8068ed2c.chunk.css",
-    "static/js/main.4117ef1b.chunk.js"
+    "static/js/main.c9a20bdb.chunk.js"
   ]
 }
