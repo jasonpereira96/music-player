@@ -1,4 +1,4 @@
-import { PLAY, PAUSE, TIMEUPDATE, PREV, NEXT } from './../actions/actions'
+import { PLAY, PAUSE, TIMEUPDATE, PREV, NEXT, VOLUMECHANGE } from './../actions/actions'
 import songList from './../data/songs'
 let initalState = {
     playing: false,
@@ -7,7 +7,8 @@ let initalState = {
     artist: '',
     currentTime: 0, //in secs
     duration: 0,//in secs
-    source: ''
+    source: '',
+    volume: 1
 };
 const player = (player = initalState, action) => {
     if (action.type === PLAY) {
@@ -63,6 +64,12 @@ const player = (player = initalState, action) => {
             ...player,
             currentTime: currentTime,
             duration: duration
+        };
+    } else if (action.type === VOLUMECHANGE) {
+        let { volume } = action;
+        return {
+            ...player,
+            volume: volume / 100
         };
     }
     return player;

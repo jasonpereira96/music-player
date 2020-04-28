@@ -8,54 +8,71 @@ import Sunshine_on_Sand from './../media/songs/Sunshine_on_Sand.mp3'
 import Whirlpool from './../media/songs/Whirlpool.mp3'
 //import all the images
 import jc from './../img/jc.jpg'
+import Bright_IMG from './../img/Bright.jpg'
+import Attraction_IMG from './../img/Attraction.jpg'
+import Castlevania_IMG from './../img/Castlevania.jpg'
+import Dragonfly_IMG from './../img/Dragonfly.jpg'
+import Hindsight_IMG from './../img/Hindsight.jpg'
+import Lazy_Boy_Blues_IMG from './../img/Lazy Boy Blues.jpg'
+import Sunshine_on_Sand_IMG from './../img/Lazy Boy Blues.jpg'
+import Whirlpool_IMG from './../img/Whirlpool.jpg'
 
 let songList = [
     {
         title: 'Bright',
-        artist: 'Someone',
+        artist: 'Unknown',
         src: Bright,
+        image: Bright_IMG,
         id: 1
     },
     {
         title: 'Attraction',
-        artist: 'Someone',
+        artist: 'Density and Time',
         src: Attraction,
+        image: Attraction_IMG,
+
         id: 2
     },
     {
         title: 'Castlevania',
-        artist: 'Someone',
+        artist: 'Density and Time',
         src: Castlevania,
+        image: Castlevania_IMG,
         id: 3
     },
     {
         title: 'Dragonfly',
-        artist: 'Someone',
+        artist: 'Quincas Moreira',
         src: Dragonfly,
+        image: Dragonfly_IMG,
         id: 4
     },
     {
         title: 'Hindsight',
-        artist: 'Someone',
+        artist: 'Density & Time',
         src: Hindsight,
+        image: Hindsight_IMG,
         id: 5
     },
     {
         title: 'Lazy Boy Blues',
-        artist: 'Someone',
+        artist: 'Unicorn Heads',
         src: Lazy_Boy_Blues,
+        image: Lazy_Boy_Blues_IMG,
         id: 6
     },
     {
         title: 'Sunshine on Sand',
-        artist: 'Someone',
+        artist: 'Unicorn Heads',
         src: Sunshine_on_Sand,
+        image: Sunshine_on_Sand_IMG,
         id: 7
     },
     {
         title: 'Whirlpool',
-        artist: 'Someone',
+        artist: 'Density and Time',
         src: Whirlpool,
+        image: Whirlpool_IMG,        
         id: 8
     }
 ];

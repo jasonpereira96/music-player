@@ -19,6 +19,7 @@ let initialState = {
         songName: firstSong.title,
 		artist: firstSong.artist,
 		source: firstSong.src,
+		volume: 1,
         currentTime: 0, //in secs
         duration: 0,//in secs
     }
@@ -54,5 +55,6 @@ function handleChange() {
 		} else {
 			audio.pause();
 		}
+		audio.volume = state.player.volume;
 	}
 }

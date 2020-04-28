@@ -5,7 +5,7 @@ export const PAUSE = 'PAUSE';
 export const NEXT = 'NEXT';
 export const PREV = 'PREV';
 export const TIMEUPDATE = 'TIMEUPDATE';
-
+export const VOLUMECHANGE = 'VOLUMECHANGE';
 
 export const filter = filterString => {
     return {
@@ -41,5 +41,11 @@ export const timeUpdate = (currentTime, duration) => {
         type: TIMEUPDATE,
         currentTime,
         duration
+    };
+}
+export const volumeChange = value => {
+    return {
+        type: VOLUMECHANGE,
+        volume: value
     };
 }

@@ -38,6 +38,9 @@ div.card-subtitle.h6 {
 .song-card {
   box-shadow:  3px 3px 5px 1px black;
 }
+.song-card:hover {
+  box-shadow:  3px 3px 5px 1px #BB86FC;
+}
 div.card-body {
   background-color: rgba(12, 19, 24, 0.95);
 }
@@ -114,6 +117,7 @@ svg {
   /* background-image: url('/img/play-64.png'); */
   /* width: fit-content; */
   /* height: fit-content; */
+  height: 14rem;
 }
 
 .info {
@@ -124,6 +128,9 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.prev:hover, .play:hover, .pause:hover, .next:hover {
+  transform: scale(1.2);
 }
 .gutter {
   top: 30px;
@@ -177,6 +184,29 @@ svg {
 .timespan { 
 
 }
+
+#volume {
+  background-color: red;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  /* width: 100%; Full-width */
+  height: 2px; /* Specified height */
+  background: #BB86FC; /* Grey background */
+  outline: none; /* Remove outline */
+  /* opacity: 0.7; Set transparency (for mouse-over effects on hover) */
+  /* -webkit-transition: .2s; 0.2 seconds transition on hover */
+  /* transition: opacity .2s; */
+}
+#volume::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  border-radius: 7.5px;
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
 .audio {
  flex: 0;
 }

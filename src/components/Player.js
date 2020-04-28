@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { play, pause, timeUpdate, next, prev } from './../actions/actions'
+import { play, pause, timeUpdate, next, prev, volumeChange } from './../actions/actions'
 // import Button from 'react-bootstrap/Button'
 import div from 'react-bootstrap/Nav'
 import playImage from './../img/play-64.png';
@@ -19,6 +19,7 @@ class Player extends React.Component {
     constructor(props) {
         super(props);
         this.onPlay = this.onPlay.bind(this);
+        this.onVolumeChange = this.onVolumeChange.bind(this);
     }
     onPlay(e) {
         e.persist();
@@ -26,6 +27,10 @@ class Player extends React.Component {
         let audio = e.target;
         let { currentTime, duration } = audio;
         this.props.onTimeUpdate(currentTime, duration);
+    }
+    onVolumeChange(event) {
+        let value = event.nativeEvent.target.value;
+        this.props.onVolumeChange(value);
     }
     componentDidMount() {
         let gutter = document.getElementById('gutter');
@@ -57,8 +62,10 @@ class Player extends React.Component {
                     <div className='waste'></div>
                 </div>
                 <div className='time'>{currentTime}/{duration}</div>
+                <div className='time'><input type='range' value={this.props.volume*100} id='volume' onChange={this.onVolumeChange} min='0' max='100'/></div>
+
                 <div className='audio'>
-                    <audio id='audio' src={source} onTimeUpdate={this.onPlay}>
+                    <audio id='audio' src={source} onTimeUpdate={this.onPlay} volume={this.props.volume} volume={1}>
                     </audio>
                 </div>
             </div>
@@ -84,7 +91,8 @@ const mapStatetoProps = state => { //gets the full state
         currentTime: state.player.currentTime,
         songName: state.player.songName,
         artist: state.player.artist,
-        source: state.player.source
+        source: state.player.source,
+        volume: state.player.volume
     };
 }
 const mapDispatchToProps = dispatch => {
@@ -103,6 +111,9 @@ const mapDispatchToProps = dispatch => {
         },
         onTimeUpdate: function (currentTime, duration) {
             dispatch(timeUpdate(currentTime, duration))
+        },
+        onVolumeChange: function (value) {
+            dispatch(volumeChange(parseInt(value)))
         }
     }
 }
