@@ -40,6 +40,7 @@ div.card-subtitle.h6 {
 }
 .song-card:hover {
   box-shadow:  3px 3px 5px 1px #BB86FC;
+  transform: scale(1.05);
 }
 div.card-body {
   background-color: rgba(12, 19, 24, 0.95);
@@ -132,6 +133,7 @@ svg {
 .prev:hover, .play:hover, .pause:hover, .next:hover {
   transform: scale(1.2);
 }
+
 .gutter {
   top: 30px;
   /* position: absolute; */
