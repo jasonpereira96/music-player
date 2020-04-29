@@ -7,6 +7,16 @@ body {
 nav.navbar {
   background-color: rgba(12, 19, 24, 0.95) !important;
 }
+.navbar-div {
+	width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+.searchbar-container {
+	padding-top: 10px;
+    flex: 0.3;
+}
+
 h5, h6, div.card-title.h5{
   color: #BB86FC !important;
 }
@@ -40,6 +50,7 @@ div.card-body {
   border-radius: 5px;  
   box-shadow: #BB86FC;
   border-radius: 20px;
+  width: 100%;
 }
 .extra-space {
   width: 100%;

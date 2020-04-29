@@ -1,8 +1,8 @@
 A music player with a cool dark theme built with [React](https://reactjs.org/) and [Redux](https://redux.js.org/).
 
-Check out a demo [here](https://jasonpereira96.github.io/music-player/)
+Check out a demo [here](https://jasonpereira96.github.io/music-player/).
 
-Song credits to the [Youtube Audio Library](https://www.youtube.com/audiolibrary/music?nv=1) and image credits to [Unsplash](https://unsplash.com)
+Song credits to the [Youtube Audio Library](https://www.youtube.com/audiolibrary/music?nv=1) and image credits to [Unsplash](https://unsplash.com).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
