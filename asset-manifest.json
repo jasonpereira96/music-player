@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/music-player/static/css/main.8068ed2c.chunk.css",
-    "main.js": "/music-player/static/js/main.59266e3f.chunk.js",
-    "main.js.map": "/music-player/static/js/main.59266e3f.chunk.js.map",
+    "main.css": "/music-player/static/css/main.f92485f0.chunk.css",
+    "main.js": "/music-player/static/js/main.4bb9371f.chunk.js",
+    "main.js.map": "/music-player/static/js/main.4bb9371f.chunk.js.map",
     "runtime-main.js": "/music-player/static/js/runtime-main.bdb22342.js",
     "runtime-main.js.map": "/music-player/static/js/runtime-main.bdb22342.js.map",
     "static/css/2.69121389.chunk.css": "/music-player/static/css/2.69121389.chunk.css",
-    "static/js/2.47e06a07.chunk.js": "/music-player/static/js/2.47e06a07.chunk.js",
-    "static/js/2.47e06a07.chunk.js.map": "/music-player/static/js/2.47e06a07.chunk.js.map",
+    "static/js/2.1a76e1a7.chunk.js": "/music-player/static/js/2.1a76e1a7.chunk.js",
+    "static/js/2.1a76e1a7.chunk.js.map": "/music-player/static/js/2.1a76e1a7.chunk.js.map",
     "index.html": "/music-player/index.html",
-    "precache-manifest.a89619fa01a990fe622c48bae105147c.js": "/music-player/precache-manifest.a89619fa01a990fe622c48bae105147c.js",
+    "precache-manifest.4b65881865b847ecc1f4c690a65a132c.js": "/music-player/precache-manifest.4b65881865b847ecc1f4c690a65a132c.js",
     "service-worker.js": "/music-player/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/music-player/static/css/2.69121389.chunk.css.map",
-    "static/css/main.8068ed2c.chunk.css.map": "/music-player/static/css/main.8068ed2c.chunk.css.map",
-    "static/js/2.47e06a07.chunk.js.LICENSE.txt": "/music-player/static/js/2.47e06a07.chunk.js.LICENSE.txt",
+    "static/css/main.f92485f0.chunk.css.map": "/music-player/static/css/main.f92485f0.chunk.css.map",
+    "static/js/2.1a76e1a7.chunk.js.LICENSE.txt": "/music-player/static/js/2.1a76e1a7.chunk.js.LICENSE.txt",
     "static/media/Attraction.jpg": "/music-player/static/media/Attraction.a74504ad.jpg",
     "static/media/Attraction.mp3": "/music-player/static/media/Attraction.c3f8f731.mp3",
     "static/media/Bright.mp3": "/music-player/static/media/Bright.8cbda0a3.mp3",
@@ -33,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.bdb22342.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.47e06a07.chunk.js",
-    "static/css/main.8068ed2c.chunk.css",
-    "static/js/main.59266e3f.chunk.js"
+    "static/js/2.1a76e1a7.chunk.js",
+    "static/css/main.f92485f0.chunk.css",
+    "static/js/main.4bb9371f.chunk.js"
   ]
 }
