@@ -1,4 +1,4 @@
-A music player with a cool dark theme built with [React](https://reactjs.org/) and [Redux](https://redux.js.org/).
+A music player with a cool dark theme built with [React](https://reactjs.org/) and [Redux](https://redux.js.org/)...
 
 Check out a demo [here](https://jasonpereira96.github.io/music-player/).
 
