@@ -9,7 +9,7 @@ class CardHolder extends React.Component {
     
     componentDidMount() {
         fetchSongs().then(songs => {
-            this.props.songsFetched(songs);
+            this.props.songsFetched(songs); //dispatch action
         });
     }
     

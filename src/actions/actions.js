@@ -5,6 +5,7 @@ export const NEXT = 'NEXT';
 export const PREV = 'PREV';
 export const TIMEUPDATE = 'TIMEUPDATE';
 export const VOLUMECHANGE = 'VOLUMECHANGE';
+export const SONGS_FETCHED = 'SONGS_FETCHED';
 
 export const filter = filterString => {
     return {
@@ -46,5 +47,11 @@ export const volumeChange = value => {
     return {
         type: VOLUMECHANGE,
         volume: value
+    };
+}
+export const songsFetched = songs => {
+    return {
+        type: SONGS_FETCHED,
+        songs
     };
 }

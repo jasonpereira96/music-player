@@ -1,0 +1,60 @@
+{
+    "songs": [
+        {
+            "title": "Bright",
+            "artist": "Unknown",
+            "src": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/songs%2FBright.mp3?alt=media&token=557ad215-6cc9-4b64-864c-cd717ef7c78e",
+            "image": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/images%2FBright.jpg?alt=media&token=f89ee60e-7abb-4273-bd1c-8a92d6edd4af",
+            "id": 1
+        },
+        {
+            "title": "Attraction",
+            "artist": "Density and Time",
+            "src": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/songs%2FAttraction.mp3?alt=media&token=adf9bc46-f150-48a4-874a-9be2b83e87f8",
+            "image": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/images%2FAttraction.jpg?alt=media&token=52ddff86-20a7-4670-9153-c4b133d027df",
+            "id": 2
+        },
+        {
+            "title": "Castlevania",
+            "artist": "Density and Time",
+            "src": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/songs%2FCastlevania.mp3?alt=media&token=8025d04a-3e1a-4213-b0d9-26864374e526",
+            "image": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/images%2FCastlevania.jpg?alt=media&token=b0aaa801-4dce-479d-b18f-671145d15bda",
+            "id": 3
+        },
+        {
+            "title": "Dragonfly",
+            "artist": "Quincas Moreira",
+            "src": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/songs%2FDragonfly.mp3?alt=media&token=069f5aa8-cd32-4705-b568-910ab01dc5ba",
+            "image": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/images%2FDragonfly.jpg?alt=media&token=552ecbc0-596c-4a88-b662-1652c8f8531b",
+            "id": 4
+        },
+        {
+            "title": "Hindsight",
+            "artist": "Density & Time",
+            "src": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/songs%2FHindsight.mp3?alt=media&token=bbf1057a-81c2-48b4-a7a0-7c42f6add521",
+            "image": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/images%2FHindsight.jpg?alt=media&token=24858f21-07e9-449c-aa9d-0aa28bf369ee",
+            "id": 5
+        },
+        {
+            "title": "Lazy Boy Blues",
+            "artist": "Unicorn Heads",
+            "src": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/songs%2FLazy_Boy_Blues.mp3?alt=media&token=68cc75e2-181a-4b7c-b278-760c2c828bd7",
+            "image": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/images%2FLazy%20Boy%20Blues.jpg?alt=media&token=dd25dc14-249c-471f-aadb-7ade6fc4a962",
+            "id": 6
+        },
+        {
+            "title": "Sunshine on Sand",
+            "artist": "Unicorn Heads",
+            "src": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/songs%2FSunshine_on_Sand.mp3?alt=media&token=b79e071f-54f6-4302-8bcd-5847c8fb72c9",
+            "image": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/images%2FSunshine_on_Sand.jpg?alt=media&token=6a8960c3-e41f-4df5-91dc-a509144bc6b1",
+            "id": 7
+        },
+        {
+            "title": "Whirlpool",
+            "artist": "Density and Time",
+            "src": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/songs%2FWhirlpool.mp3?alt=media&token=fcd49f3b-cddd-4da0-bc72-7cff11300a32",
+            "image": "https://firebasestorage.googleapis.com/v0/b/music-player-c5407.appspot.com/o/images%2FWhirlpool.jpg?alt=media&token=00b43421-1a69-46a2-83ea-49a020dc06f4",
+            "id": 8
+        }
+    ]
+}

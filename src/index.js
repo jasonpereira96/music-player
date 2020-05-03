@@ -9,7 +9,7 @@ import songList from './data/songs'
 
 let firstSong = songList[0];
 let initialState = {
-	songs: songList,
+	songs: [],
 	searchbar: {
         filter: ''
     },

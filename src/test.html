@@ -2,64 +2,74 @@
 
 <head></head>
 <style>
-   
     .red {
         background-color: red;
         flex: 1;
     }
+
     .blue {
         background-color: blue;
         flex: 2;
     }
+
     .green {
         flex: 1;
         background-color: green;
         display: inline-flex;
     }
+
     .yellow {
         flex: 2;
         background-color: yellow;
     }
+
     .orange {
         flex: 5;
         background-color: orange;
     }
+
     .container {
         display: inline-flex;
         width: 100%;
         height: 100%;
     }
+
     .circle {
         background-color: black;
         height: 15px;
         width: 15px;
         border-radius: 7.5px
     }
+
     .c1 {
         height: 15px;
         width: 15px;
         border-radius: 7.5px;
         margin-top: 15px;
-        
+
     }
+
     .c2 {
         height: 20px;
         width: 20px;
         border-radius: 10px;
         margin-top: 10px;
     }
+
     .c3 {
         height: 25px;
         width: 25px;
         border-radius: 12.5px;
         margin-top: 7px;
     }
+
     .c4 {
         height: 30px;
         width: 30px;
         border-radius: 15px;
         margin-top: 5px;
     }
+
     .c5 {
         height: 35px;
         width: 35px;
@@ -68,8 +78,11 @@
 
     }
 </style>
-<body>
 
+<body>
+    <script>
+        
+    </script>
     <!-- <audio id='audio' controls src='../media/songs/Dragonfly.mp3'></audio> -->
 
     <!-- <button id='change1'>Change</button> -->
@@ -88,20 +101,43 @@
             <div class='circle c4'></div>
             <div class='circle c5'></div>
         </div>
-        <div class='red'></div>
+        <div class='red'>
+            <img alt='Version of "Whistler\'>
+            <audio controls>fff</audio>
+
+            <input type="text" id='ggg'>
+        </div>
     </div>
-    
+
     <script>
-        let button = document.getElementById('change1');
-        button.addEventListener('click', function () {
-            let audio = document.getElementById('audio');
-            // audio.src = '../songs/Bright.mp3'
-            audio.play();   
-        });
-        let image = document.getElementById('img');
-        image.addEventListener('hover', function() {
-            image.src = 'img/play-64.png';
-        });
+        function debounce(fn, delay) {
+            let timer = null;
+            return function () {
+                if (timer) {
+                    clearTimeout(timer);
+                }
+                timer = setTimeout(() => {
+                    fn.call(null, ...arguments);
+                    timer = null;
+                }, delay);
+            }
+        }
+        let handler = debounce(function (e) {
+            console.log(e.target.value)
+        }, 200);
+        
+        document.getElementById('ggg').addEventListener('input', handler);
+
+        // let button = document.getElementById('change1');
+        // button.addEventListener('click', function () {
+        //     let audio = document.getElementById('audio');
+        //     // audio.src = '../songs/Bright.mp3'
+        //     audio.play();
+        // });
+        // let image = document.getElementById('img');
+        // image.addEventListener('hover', function () {
+        //     image.src = 'img/play-64.png';
+        // });
     </script>
 </body>
 
