@@ -82,6 +82,9 @@ svg {
 .empty-card{
   background-color: #0c1318
 }
+.song-card.card:hover {
+  cursor: pointer;
+}
 
 
 
