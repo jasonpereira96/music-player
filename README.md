@@ -1,3 +1,7 @@
+# Music Player
+
+![alt text](https://github.com/jasonpereira96/music-player/blob/master/img/Screenshot.png "Music Player")
+
 A music player with a cool dark theme built with [React](https://reactjs.org/) and [Redux](https://redux.js.org/).
 
 Backend created with [Firebase](https://firebase.google.com/).
